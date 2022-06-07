@@ -27,7 +27,7 @@ body{
 
 .container-perfil{
     display: flex;
-    justify-content: left;
+    justify-content: space-between;
     background-color: #004E64;
     height: auto;
     width: 100%;
@@ -42,6 +42,15 @@ body{
     margin-bottom: 20px;
     text-align: left;
     
+}
+
+.botãoIr{
+    display: block;
+    color: white;
+    max-width: 10%;
+    height: auto;
+    margin-top: 20px;
+    margin-right: 20px;
 }
 
 .botoes-menu{
