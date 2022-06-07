@@ -4,130 +4,112 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stylePrincipal.css">
     <title>Tst</title>
 
-    <style>
-        #listaRegistro{display: none;}
-        #cadastroRegistro{
-            display: none;
-            flex-direction: column;
-            gap: 30px;  
-        }
-
-        body[page=lista] #listaRegistro{display: block;}
-        body[page=cadastro] #cadastroRegistro{display:flex;}
-
-        body{
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 14px;
-        }
-
-        table{
-            width: 100%;
-            border-collapse: collapse;
-        }
-        table th,
-        table td{
-            font-size: 14px;
-            padding: 10px 15px;
-            border: solid 1px #ccc;
-        }
-
-        button{
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            background-color: #07a;
-            color: #fff;
-            margin: 3px;
-            padding: 10px 15px;
-        }
-        button.cinza{
-            background-color: #ccc;
-            color: #666;
-        }
-        button:hover{
-            opacity: 0.8;
-        }
-        input{
-            border: solid 1px #ccc;
-            border-radius: 4px;
-            padding: 10px;
-        }
-        .label>div{
-            display: flex;
-        }
-        .label>div>input{
-            flex: 1;
-        }
-        
-    </style>
 </head>
 <body page="lista">
-    <h1 id="logado"> </h1>
+    <div class="container">
+        <div class="card">
+            <button class="container-perfil">
+                <div class="container-perfil-informations">
+                    <img src="/LAIBOSIX/img/Foto-Perfil.png" alt="" style="filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));">
+                    <a id="logado"> </a>
+                    <a href="">teste</a>
+                </div>
+            </button>
 
-    <div id="listaRegistro">
+            <div class="botoes-menu">
+                <div class="coluna1">
+                    <button type="button"> 
+                        <img src="/LAIBOSIX/img/Carteira.png"  />
+                    </button>
 
-        <div style='display: flex;'>
-            <input style='flex:1' placeholder="PESQUISAR" autofocus id='inputPesquisa' />
-        </div>
+                    <button type="button"> 
+                        <img src="/LAIBOSIX/img/Consultas.png"  />
+                    </button>
 
+                    <button type="button"> 
+                        <img src="/LAIBOSIX/img/Encaminhamentos.png"  />
+                    </button>
 
-        <table>
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>Nome</th>
-                    <th>Fone</th>
-                </tr>
-
-            </thead>
-            <tbody id="listaRegistroBody"></tbody>
-        </table>
-        
-        <div>
-            <button  onclick="visualizar('cadastro',true)">Novo usúario</button>
-        </div>
-     
-    </div>
-
-
-    <form id="cadastroRegistro">
-      
-        <div class="label">
-            <div>ID</div>
-            <div>
-                <input type="number" readonly id='id'/>
-            </div>
-        </div>
-
-        <div class="label">
-            <div>Nome</div>
-            <div>
-                <input id="nome" id='nome'/>
-            </div>  
-        </div>
-       
-        <div class="label">
-            <div>Fone</div>
-            <div>
-                <input type="tel" id='fone'>
-            </div>
-        </div>
-
-   
-
-
-    <div>
-        <button>Cadastrar</button>
-        <button onclick="visualizar('lista')" class="cinza" type="button">Cancelar </button>
-    </div>
-
-</form>
-
-    <button onClick='sair()'>Sair</button>
-   
+                    <button type="button"> 
+                        <img src="/LAIBOSIX/img/Ajuda.png"  />
+                    </button>
+                </div>
+                <div class="coluna2">
+                    <button type="button"> 
+                        <img src="/LAIBOSIX/img/Exames.png"  />
+                    </button>
     
+                    <button type="button"> 
+                        <img src="/LAIBOSIX/img/Prontuarios.png"  />
+                    </button>
+    
+                    <button type="button"> 
+                        <img src="/LAIBOSIX/img/Notificações.png"  />
+                    </button>
+                </div>
+            </div>
+            <!--
+
+            <div id="listaRegistro">
+                <div style='display: flex;'>
+                    <input style='flex:1' placeholder="PESQUISAR" autofocus id='inputPesquisa' />
+                </div>
+
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nome</th>
+                            <th>Fone</th>
+                        </tr>
+                    </thead>
+                    <tbody id="listaRegistroBody"></tbody>
+                </table>
+        
+                <div>
+                    <button  onclick="visualizar('cadastro',true)">Novo usúario</button>
+                </div>
+            </div>
+
+
+            <form id="cadastroRegistro">
+      
+                <div class="label">
+                    <div>ID</div>
+                    <div>
+                        <input type="number" readonly id='id'/>
+                    </div>
+                </div>
+
+                <div class="label">
+                    <div>Nome</div>
+                    <div>
+                        <input id="nome" id='nome'/>
+                    </div>  
+                </div>
+       
+                <div class="label">
+                    <div>Fone</div>
+                    <div>
+                        <input type="tel" id='fone'>
+                    </div>
+                </div>
+
+                <div>
+                    <button>Cadastrar</button>
+                    <button onclick="visualizar('lista')" class="cinza" type="button">Cancelar </button>
+                </div>
+
+            </form>
+
+            <button onClick='sair()'>Sair</button>
+            -->
+        </div>
+    </div>
     <script src="./scriptPrincipal.js"></script>
 </body>
 
