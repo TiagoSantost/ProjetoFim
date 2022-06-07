@@ -1,7 +1,8 @@
 *{
-    magin: 0;
+    margin: 0;
     padding: 0;
     font-family:'Roboto', sans-serif;
+    color: white
 }
 body{
     background-color: #25A18E;
@@ -12,10 +13,10 @@ body{
     justify-content: center;
     width: 100%;
     margin-top: 100px;
+    margin-bottom: 100px;
 }
 
-.card{
-    background-color: #FFFFFF80;
+.card{ 
     padding: 30px;
     border-radius: 4%;
     box-shadow: 3px 3px 3px 3px #00000070;
@@ -25,9 +26,22 @@ body{
 h1{
     text-align: center;
     margin-bottom: 20px;
+    margin-top: 20px;
     color: #FFFFFF;
 }
- 
+.voltar{
+    display: block;
+    color: white;
+    max-width: 10%;
+    height: auto;
+}
+.logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 40%;
+    height: auto;
+}
 .label-float input{
     width: 100%;
     padding: 5px 5px;
@@ -69,19 +83,20 @@ h1{
     margin-top: 0;
     color: #dbbaba ;
 }
-
+ 
 button{
-    background-color: transparent;
-    border-color: hsl(171, 22%, 63%);  
-    color: hsl(171, 22%, 63%);  
+    background-color: white;
+    border-color: white;
+    color: #25A18E;;
     padding: 7px;
     font-weight: bold;
     font-size: 12pt;
     margin-top: 20px;
-    border-radius: 5px;
+    border-radius: 20px;
     cursor: pointer;
     outline: none;
     transition: all .5s ease-out;
+    box-shadow: 0px;
 }
 
 button:hover{
@@ -100,24 +115,4 @@ button:hover{
     right: 10px;
     cursor: pointer;
     color: #FFFFFF;
-}
-
-#msgError{
-    text-align: center;
-    color: #ff0000;
-    background-color: #ffbbbb;
-    padding: 10px;
-    border-radius: 4px;
-    display: none;
-}
-
-#msgSucess{
-    text-align: center;
-    color: #0b0;
-    background-color: #bbffbe;
-    padding: 10px;
-    border-radius: 4px;
-    display: none;
-    
-
 }

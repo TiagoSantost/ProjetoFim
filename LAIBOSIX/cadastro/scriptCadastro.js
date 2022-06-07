@@ -127,7 +127,7 @@ function cadastrar(){
     msgError.innerHTML = ''
     
     setTimeout(()=> {
-      window.location.href ='http://127.0.0.1:5500/login/index.html'
+      window.location.href ='http://127.0.0.1:5500/LAIBOSIX/login/index.html'
     }, 3000)
 
     
