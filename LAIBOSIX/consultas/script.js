@@ -12,7 +12,7 @@
 
     var listaMedico = {
         medicos:[ 
-            {nome: "Pedro", especialidade: "Anestesiologista"},
+            {nome: "Pedro", especialidade: "Anestesiologista", data:"13/03/2020", horario: "10:40"},
             {nome: "Tiago", especialidade: "Cardiologia"},
             {nome: "ADMA ", especidade: "Pediátrica"}
         ]
@@ -70,10 +70,10 @@ function removeElemento(){
 
 function visualizarMedico(){
         const verMedico = listaMedico.medicos.find( medico => medico.especialidade == input.value  )
-        console.log(verMedico)
-        if(verMedico){
-            console.log(verMedico)
+        if(verMedico){ 
             document.getElementById('nome').value = verMedico.nome
+            document.getElementById('data').value = verMedico.data
+            document.getElementById('horario').value = verMedico.horario
         }
     } 
 
