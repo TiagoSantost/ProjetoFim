@@ -1,24 +1,28 @@
-let ConsultasList = JSON.parse(localStorage.getItem('ConsultasList'))
- 
-console.log(ConsultasList)
+
+var jsonTarefa = localStorage.getItem('KEY');
+var tarefa = JSON.parse(jsonTarefa);
+
+
+
+
+
+
+
+render()
+
+
 function render(){
     const tbody = document.getElementById('listaRegistroBody')
     if(tbody){
-        var data = listaRegistros.usuarios;
-
-        
-        data = data
-            .sort( (a, b) => {
-                return a.nome < b.nome ? -1 : 1
-            })
-            .map( usuario => {
+        var data = tarefa;
+        console.log(data)
+        data.map( medico => {
                 return `<tr>
-                        <td>${usuario.id}</td>
-                        <td>${usuario.nome}</td>
-                        <td>${usuario.fone}</td>
+                        <td>${medico.nome}</td>
+                        <td>${medico.especialidade}</td>
+                        <td>${medico.horario}</td>
                         <td>
-                            <button onclick='visualizar("cadastro",false,${usuario.id})'>Editar</button>
-                            <button class='vermelho' onclick='querDeletar(${usuario.id})'>Deletar</button>
+                            
                         </td>
                     </tr>`
             } )
