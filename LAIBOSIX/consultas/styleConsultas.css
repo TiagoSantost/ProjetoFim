@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     font-family:'Roboto', sans-serif;
-    
 }
 body{
     background-color: #25A18E;
@@ -17,85 +16,74 @@ body{
 }
 
 .card{
-    padding: 30px;
+    
     border-radius: 17px;
     box-shadow: 3px 3px 3px 3px #00000070;
     width: 400px;
-
+    background-color: white;
 }
 
-ul{
-    list-style: none;;
-}
-.list{
+header{
+    background-color: #25A18E;
+    height: 50px;
     width: 100%;
-    background-color: #ffffff;
-    border-radius: 0 0 5px 5px;
-}
-.list-items{
-    padding: 10px 5px;
-}
-.list-items:hover{
-    background-color: #dddddd;
-}
-
-.label-float input{
-    color: #FFFFFF;
-    width: 100%;
-    padding: 5px 5px;
-    display: inline-block;
-    border: 0;
-    border-bottom: 2px solid #ebd7d7bb ;
-    background-color: transparent;
-    outline: none;
-    min-width: 180px; 
-    font-size: 16px;
-    transition: all .3s ease-out;
-    border-radius: 0;
+    display: flex;
+    align-items: center;
     
 }
 
-.label-float input::placeholder{
+h3{
     color: white;
+    margin-left: 20px;
 }
 
-.label-float{
-    position: relative;
-    padding-top: 13px;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    color: #FFFFFF;
+.consultas{
+    
 }
 
+.consultas:a{
+    margin-bottom: 1px;
+}
 
 button{
-    background-color: white;
-    border-color: white;
-    color: #25A18E;;
-    padding: 7px;
-    font-weight: bold;
-    font-size: 12pt;
-    margin-top: 20px;
-    border-radius: 20px;
-    cursor: pointer;
-    outline: none;
-    transition: all .5s ease-out;
-    box-shadow: 0px;
+    background-color: transparent;
+    width: 100%;
+    border-color: #C0C0C0;
+    border-top: 5px;
+    border-left: 5px;
+    border-right: 5px;
+    color: #666666;
+    font-size: 16px;
+    
 }
 
 button:hover{
-    background-color: #25A18E;
-    color: #FFFFFF;
+    background-color: rgb(221, 221, 221);
 }
 
-hr{
-    color: white;
-    width: 50%;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-.justify-center{
+.consulta{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px ; 
+    margin-bottom: 20px;
+    margin-left: 20px;
+    text-align: left; 
+}
+
+.consulta2{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px ; 
+    margin-bottom: 20px;
+    margin-left: 20px;
+    text-align: left;
+}
+
+.consulta3{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px ; 
+    margin-bottom: 20px;
+    margin-left: 20px;
+    text-align: left;
 }
