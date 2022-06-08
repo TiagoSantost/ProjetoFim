@@ -68,6 +68,11 @@ button:hover{
     background-color: rgb(221, 221, 221);
 }
 
+button:last-child{
+    border-bottom-left-radius: 17px;
+    border-bottom-right-radius: 17px;
+}
+
 .consulta{
     display: flex;
     flex-direction: column;
