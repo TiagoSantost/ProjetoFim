@@ -1,5 +1,6 @@
 let userLogado = JSON.parse(localStorage.getItem('userLogado'))
-
+ 
+console.log(userLogado)
 let logado = document.querySelector('#logado')
 
 logado.innerHTML = `Olá ${userLogado.nome}`
@@ -55,6 +56,7 @@ function render(){
                 return expReg.test( usuario.nome ) || expReg.test( usuario.fone )
             } )
         }
+        
         data = data
             .sort( (a, b) => {
                 return a.nome < b.nome ? -1 : 1
