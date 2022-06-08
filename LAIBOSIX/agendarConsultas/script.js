@@ -18,8 +18,7 @@
         ]
     
     }
-    
-    var consultas = []
+  
 
 let sorteEspecialidade = especialidades.sort();
 
@@ -79,7 +78,9 @@ function visualizarMedico(){
     }
  } 
     
-   
+     
+ var consultas = []
+ 
 
  function submite(e){
     e.preventDefault()
@@ -91,6 +92,7 @@ function visualizarMedico(){
     }
     if(data){
         insertUsuario(nome,especialidade,data,horario)
+        gravarBD()
     }
     window.location.href = 'http://127.0.0.1:5500/LAIBOSIX/agendadas/index.html'
 }
@@ -101,23 +103,12 @@ window.addEventListener('load', () => {
 
 function insertUsuario(nome, especialidade, data, horario){
     consultas.push({ nome, especialidade, data,horario })
-    gravarBD()
 }
 
+const KEY = '@teste'
 function gravarBD(){
-    localStorage.setItem('ConsultasList', JSON.stringify(consultas) )
+    window.localStorage.setItem('KEY', JSON.stringify(consultas) )
 }
 
 
 
-listUser = JSON.parse(localStorage.getItem('listUser'))
-  
-  listUser.forEach((item)=> {
-    if(usuario.value == item.userCad && senha.value == item.senhaCad){
-        userValid ={
-          nome: item.nomeCad,
-          user: item.userCad,
-          senha: item.senhaCad
-        }
-    }
-  })

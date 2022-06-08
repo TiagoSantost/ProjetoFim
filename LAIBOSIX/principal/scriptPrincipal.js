@@ -1,4 +1,6 @@
 let userLogado = JSON.parse(localStorage.getItem('userLogado'))
+
+console.log(userLogado)
  
 console.log(userLogado)
 let logado = document.querySelector('#logado')
