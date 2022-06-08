@@ -48,7 +48,7 @@ h3{
     
 }
 
-.options:a{
+.consultas:a{
     margin-bottom: 1px;
 }
 
@@ -64,21 +64,33 @@ button{
     
 }
 
-button:last-child{
-    border-bottom-left-radius: 17px;
-    border-bottom-right-radius: 17px;
-}
-
 button:hover{
     background-color: rgb(221, 221, 221);
 }
 
-.option{
+.consulta{
     display: flex;
     flex-direction: column;
-    margin-top: 15px ; 
-    margin-bottom: 15px;
+    margin-top: 20px ; 
+    margin-bottom: 20px;
     margin-left: 20px;
     text-align: left; 
 }
 
+.consulta2{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px ; 
+    margin-bottom: 20px;
+    margin-left: 20px;
+    text-align: left;
+}
+
+.consulta3{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px ; 
+    margin-bottom: 20px;
+    margin-left: 20px;
+    text-align: left;
+}

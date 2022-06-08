@@ -23,6 +23,12 @@ body{
     width: 400px;
 
 }
+.voltar{
+    display: block;
+    color: white;
+    max-width: 10%;
+    height: auto;
+}
 
 ul{
     list-style: none;
