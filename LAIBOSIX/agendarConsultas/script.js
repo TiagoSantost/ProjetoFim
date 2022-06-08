@@ -3,18 +3,27 @@
         "Anestesiologista",
         "Angiologia",	
         "Cardiologia",
-        "Cirurgia Cardiovascular",
-        "Cirurgia de Mão",
-        "Cirurgia de Cabeça e Pescoço",
+        "Cardiovascular",
+        "Clinico Geral",
+        "Dermatologia",
         "Oncológica",
-        "Pediátrica"              
+        "Pediátrica",
+        "Endoscopia",
+        "Geriatria"           
     ]
 
     var listaMedico = {
         medicos:[ 
-            {nome: "Pedro", especialidade: "Anestesiologista", data:"13/03/2020", horario: "10:40"},
-            {nome: "Tiago", especialidade: "Cardiologia", data:"13/03/2020", horario: "10:40"},
-            {nome: "adam ", especidade: "Pediátrica"}
+            {nome: "Pedro", especialidade: "Anestesiologista", data:"15/05/2022", horario: "16:45"},
+            {nome: "Tiago", especialidade: "Cardiologia", data:"17/07/2022", horario: "10:40"},
+            {nome: "Guilherme", especialidade: "Angiologia", data:"22/06/2022", horario: "17:50"},
+            {nome: "João", especialidade: "Cardiovascular", data:"31/08/2022", horario: "09:00"},
+            {nome: "Vinicius", especialidade: "Clinico Geral", data:"30/09/2022", horario: "08:00"},
+            {nome: "Heitor", especialidade: "Dermatologia", data:"20/10/2022", horario: "13:40"},
+            {nome: "Anielle", especialidade: "Oncológica", data:"25/01/2022", horario: "11:30"},
+            {nome: "Jean", especialidade: "Pediátrica", data:"27/07/2022", horario: "10:50"},
+            {nome: "Lucas", especialidade: "Endoscopia", data:"26/05/2022", horario: "07:30"},
+            {nome: "Adma", especialidade: "Geriatria", data:"17/10/2022", horario: "08:00"},
         ]
     
     }
@@ -105,9 +114,9 @@ function insertUsuario(nome, especialidade, data, horario){
     consultas.push({ nome, especialidade, data,horario })
 }
 
-const KEY = '@teste'
+const KEY = '@Consultas'
 function gravarBD(){
-    window.localStorage.setItem('KEY', JSON.stringify(consultas) )
+    window.localStorage.setItem(KEY, JSON.stringify(consultas) )
 }
 
 
