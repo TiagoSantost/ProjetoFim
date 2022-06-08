@@ -9,7 +9,9 @@ if(localStorage.getItem('token') == null){
     window.location.href = 'http://127.0.0.1:5500/LAIBOSIX/login/index.html'
 }
 
-
+function acessarCadastro(){
+    window.location.href = 'http://127.0.0.1:5500/LAIBOSIX/consultas/index.html'
+}
 function sair(){
     localStorage.removeItem('token')
     window.location.href = 'http://127.0.0.1:5500/LAIBOSIX/login/index.html'

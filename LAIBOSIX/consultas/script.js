@@ -13,8 +13,8 @@
     var listaMedico = {
         medicos:[ 
             {nome: "Pedro", especialidade: "Anestesiologista", data:"13/03/2020", horario: "10:40"},
-            {nome: "Tiago", especialidade: "Cardiologia"},
-            {nome: "ADMA ", especidade: "Pediátrica"}
+            {nome: "Tiago", especialidade: "Cardiologia", data:"15/03/2020", horario: "20:40"},
+            {nome: "ADMA ", especidade: "Pediátrica", data:"25/03/2021", horario: "10:40"}
         ]
     
     }

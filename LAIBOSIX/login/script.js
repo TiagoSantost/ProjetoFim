@@ -11,6 +11,9 @@ butao.addEventListener('click', ()=>{
   }
 })
 }
+function acessarCadastro(){
+  window.location.href = 'http://127.0.0.1:5500/LAIBOSIX/cadastro/TelaCadastro.html'
+}
 
 function entrar(){
   let usuario = document.querySelector("#usuario")
